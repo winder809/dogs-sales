@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pursuit project inventory app</title>
+    <link rel="stylesheet" href="diseno.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dogs sales</h1>
+    </header>
+    <div id="doglist">
+        <div class="dog">
+            <h2>German Shepherd</h2>
+            <img src="https://d.newsweek.com/en/full/2201052/dog.jpg?w=1600&h=1600&q=88&f=2ed37e52e2cf7510cd2880b25729cdf0"
+                alt="" width="300" height="300">
+            <div>Price: <span class="price">$2000</span></div>
+            <div>In stock: <span class="in-stock">Yes</span></div>
+            <button class="remove">Remove</button>
+
+        </div>
+        <div>
+            <h2>Tzi-shu</h2>
+            <img src="https://www.sheknows.com/wp-content/uploads/2023/06/cute-small-dog-breeds.jpg?w=695&h=391&crop=1"
+                alt="" width="300" height="300">
+            <div>Price: <span class="price">$500</span></div>
+            <div>In stock: <span class="in-stock">Yes</span></div>
+            <button class="remove">Remove</button>
+
+        </div>
+        <div>
+            <h2>Bulldog</h2>
+            <img src="https://cdn.britannica.com/07/234207-050-0037B589/English-bulldog-dog.jpg" alt="" width="300"
+                height="300">
+            <div>Price: <span class="price">$1899</span></div>
+            <div>In stock: <span class="in-stock">Yes</span></div>
+            <button class="remove">Remove</button>
+
+        </div>
+
+    </div>
+    <form id="dogForm">
+        <fieldset>
+            <legend>Add New Dog</legend>
+
+            <label for="name">dog</label>
+            <input type="text" id="name" placeholder="dog name" required>
+            <label for="availability">Dog</label>
+            <select id="availability" required>
+                <option value="select">select</option>
+                <option value="pillbut">Pillbut</option>
+                <option value="akita">Akita</option>
+                <option value="barbet">Barbet</option>
+            </select>
+            <label for="price">Price</label>
+            <input type="text" id="price" placeholder="$$" required>
+
+            <label for="stock">In-Stock</label>
+            <select id="stock" required>
+                <option value="in-stock">In stock</option>
+                <option value="out-stock">Out Stock</option>
+            </select>
+            <button type="submit">Submit</button>
+            <button type="reset"> Reset</button>
+
+        </fieldset>
+    </form>
+
+    <script src="java.js"></script>
+</body>
+
+</html>
